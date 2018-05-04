@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<link href="demo.css" type="text/css">
+	<link rel="stylesheet" href="css/cropper.css" type="text/css">
+	<link rel="stylesheet" href="css/cropSet.css" type="text/css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/demo.js"></script>
+	<script type="text/javascript" src="js/cropper.js"></script>
+	<script type="text/javascript" src="js/cropSet.js"></script>
+</head>
+<body>
+	<a href="javascript:;" id="btn">upload</a>
+	<!-- <input type="button" name="" id="btn" value="upload"> -->
+	<script>
+		$('#btn').click(function(){
+			 var tmp={
+		      title : '图片裁剪上传'
+		    };
+			  cropSet.init(tmp,function(){
+		     	cropSet.destoryCrop();
+		    });
+		})
+	</script>
+</body>
+</html>
